@@ -158,15 +158,16 @@ function transformLocaleToStandart (num) {
 }
 
 function appendTableRows (income, id, currentMatbuhPrice) {
-  let price = 0;
+  	let price = 0;
 
 	const tableBody = document.getElementById("resultTableBody")
+	const makbuzBtn = document.getElementById("makbuzGoster")
+
 
 	// Tüm çocukları silmek için bir döngü kullanın
 	while (tableBody.firstChild) {
 	  tableBody.removeChild(tableBody.firstChild);
 	}
-
 	for (let i = 0; i < percentages[id - 1].length; i++) {
 		if (income <= percentageThresholds[i]) {
 			price += income * percentages[id - 1][i];
@@ -176,7 +177,7 @@ function appendTableRows (income, id, currentMatbuhPrice) {
 				<tr>
 					<td>${i === 0 ? 'İlk' : 'Sonra Gelen'} ₺${percentageThresholds[i]} için</td>
 					<td>%${percentages[id - 1][i] * 100}</td>
-					<td>₺${incomePercentage > currentMatbuhPrice ? incomePercentage : currentMatbuhPrice}</td>
+					<td>₺${incomePercentage > currentMatbuhPrice ? incomePercentage : (id === 1 ? currentMatbuhPrice : incomePercentage)}</td>
 				</tr>
 			`
 			tableBody.appendChild(newTr)
@@ -206,12 +207,25 @@ function appendTableRows (income, id, currentMatbuhPrice) {
 	tableBody.appendChild(newTr)
 	const makbuz = document.getElementById("makbuz")
 	makbuz.classList.remove('invisible');
+	makbuzBtn.removeAttribute('disabled');
 }
 
 function showMakbuz () {
-	debugger
 	const makbuzType = document.getElementById('makbuzType').value
-	const price = document.getElementById("toplamUcret").value
+	const priceText = document.getElementById("toplamUcret").textContent
+	const price = parseInt(priceText.substr(1))
+
+	const grossTd = document.getElementById('gross')
+	const grossLegalTd = document.getElementById('grossLegal')
+	const stopajTd = document.getElementById('stopaj')
+	const stopajLegalTd = document.getElementById('stopajLegal')
+	const netTd = document.getElementById('net')
+	const netLegalTd = document.getElementById('netLegal')
+	const kdvTd = document.getElementById('kdv')
+	const kdvTLegalTd = document.getElementById('kdvLegal')
+	const totalTd = document.getElementById('total')
+	const totalLegalTd = document.getElementById('totalLegal')
+
 	let gross = null
 	let kdv = null
 	let stopaj = null
@@ -223,53 +237,60 @@ function showMakbuz () {
 	let netLegal = null
 	let totalLegal = null
 	if (makbuzType == 1) {
-		gross = ((price * 100) / 120).toFixed(2)
-		grossLegal = ((price * 100) / 120).toFixed(2)
+		gross = parseFloat(((price * 100) / 120).toFixed(2))
+		grossLegal = parseFloat(((price * 100) / 120).toFixed(2))
 		stopaj = 0
-		stopajLegal = (grossLegal * 0.2).toFixed(2)
+		stopajLegal = parseFloat((grossLegal * 0.2).toFixed(2))
 		net = gross
-		netLegal = (grossLegal - stopajLegal).toFixed(2)
-		kdv = (gross * 0.2).toFixed(2)
-		kdvLegal = (grossLegal * 0.2).toFixed(2)
-		total = (net + kdv).toFixed(2)
-		totalLegal = (netLegal + kdvLegal).toFixed(2)
+		netLegal = parseFloat((grossLegal - stopajLegal).toFixed(2))
+		kdv = parseFloat((gross * 0.2).toFixed(2))
+		kdvLegal = parseFloat((grossLegal * 0.2).toFixed(2))
+		total = parseFloat((net + kdv).toFixed(2))
+		totalLegal = parseFloat((netLegal + kdvLegal).toFixed(2))
 	} else if (makbuzType == 2) {
-		gross = ((price * 100) / 120).toFixed(2)
-		grossLegal = ((price * 100) / 120).toFixed(2)
+		gross = parseFloat(((price * 100) / 120).toFixed(2))
+		grossLegal = price
 		stopaj = 0
-		stopajLegal = (grossLegal * 0.2).toFixed(2)
+		stopajLegal = parseFloat((grossLegal * 0.2).toFixed(2))
 		net = gross
-		netLegal = (grossLegal - stopajLegal).toFixed(2)
-		kdv = (gross * 0.2).toFixed(2)
-		kdvLegal = (grossLegal * 0.2).toFixed(2)
-		total = (net + kdv).toFixed(2)
-		totalLegal = (netLegal + kdvLegal).toFixed(2)
+		netLegal = parseFloat((grossLegal - stopajLegal).toFixed(2))
+		kdv = parseFloat((gross * 0.2).toFixed(2))
+		kdvLegal = parseFloat((grossLegal * 0.2).toFixed(2))
+		total = parseFloat((net + kdv).toFixed(2))
+		totalLegal = parseFloat((netLegal + kdvLegal).toFixed(2))
 	} else if (makbuzType == 3) {
 		gross = price
-		grossLegal = ((price * 5) / 4).toFixed(2)
+		grossLegal = parseFloat(((price * 5) / 4).toFixed(2))
 		stopaj = 0
-		stopajLegal = (grossLegal * 0.2).toFixed(2)
+		stopajLegal = parseFloat((grossLegal * 0.2).toFixed(2))
 		net = price
-		netLegal = (grossLegal - stopajLegal).toFixed(2)
-		kdv = (price * 0.2).toFixed(2)
-		kdvLegal = (grossLegal * 0.2).toFixed(2)
-		total = (net + kdv).toFixed(2)
-		totalLegal = (netLegal + kdvLegal).toFixed(2)
+		netLegal = parseFloat((grossLegal - stopajLegal).toFixed(2))
+		kdv = parseFloat((price * 0.2).toFixed(2))
+		kdvLegal = parseFloat((grossLegal * 0.2).toFixed(2))
+		total = parseFloat((net + kdv).toFixed(2))
+		totalLegal = parseFloat((netLegal + kdvLegal).toFixed(2))
 	} else {
 		gross = price
 		grossLegal = price
 		stopaj = 0
-		stopajLegal = (grossLegal * 0.2).toFixed(2)
+		stopajLegal = parseFloat((grossLegal * 0.2).toFixed(2))
 		net = price
-		netLegal = (grossLegal - stopajLegal).toFixed(2)
-		kdv = (price * 0.2).toFixed(2)
-		kdvLegal = (grossLegal * 0.2).toFixed(2)
-		total = (net + kdv).toFixed(2)
-		totalLegal = (netLegal + kdvLegal).toFixed(2)
+		netLegal = parseFloat((grossLegal - stopajLegal).toFixed(2))
+		kdv = parseFloat((price * 0.2).toFixed(2))
+		kdvLegal = parseFloat((grossLegal * 0.2).toFixed(2))
+		total = parseFloat((net + kdv).toFixed(2))
+		totalLegal = parseFloat((netLegal + kdvLegal).toFixed(2))
 	}
-	// const price = document.getElementById("toplamUcret").value
-	// const gross = ((price * 100) / 120).toFixed(2)
-
+	grossTd.innerHTML = '₺' + gross
+	grossLegalTd.innerHTML = '₺' + grossLegal 
+	stopajTd.innerHTML = '₺' + stopaj 
+	stopajLegalTd.innerHTML = '₺' + stopajLegal 
+	netTd.innerHTML = '₺' + net 
+	netLegalTd.innerHTML = '₺' + netLegal 
+	kdvTd.innerHTML = '₺' + kdv 
+	kdvTLegalTd.innerHTML = '₺' + kdvLegal 
+	totalTd.innerHTML = '₺' + total 
+	totalLegalTd.innerHTML = '₺' + totalLegal
 }
 
 function submitClick () {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/style/agora.css ">
+  <title>AGORA</title>
   <link rel="icon" href="./assets/images/agoralogo3.png"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -12,56 +12,61 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-  <title>AGORA</title>
+  <link rel="stylesheet" href="assets/style/agora.css ">
 </head>
 <body class="bg-light">
-  <nav class="navbar navbar-default navbar-fixed-top mega trans-helper navbar-trans navbar-trans-dark pt-0 pb-0">
+  <nav class="navbar navbar-default navbar-fixed-top mega trans-helper navbar-trans navbar-trans-dark pt-0 pb-0 navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">
         <img class="img-fluid" src="./assets/images/agoralogo3.png" width="80" alt="">
       </a>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html">Anasayfa</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Arabuluculuk</a>
-          <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukNedir">Arabulucuk Nedir</a></li>
-              <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukSüreci">Arabuluculuk Süreci</a></li>
-              <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukÜcreti">Arabuluculuk Ücreti</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="./arabuluculuk.html#sorulanSorular">Sıkça Sorulan Sorular</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Formlar</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./formlar.html#ticariBasvuru">Ticari Uyuşmazlıklarda Arabuluculuk Başvurusu</a></li>
-            <li><a class="dropdown-item" href="./formlar.html#isBasvuru">İş Uyuşmazlıklarında Arabuluculuk Başvurusu</a></li>
-            <li><a class="dropdown-item" href="./formlar.html#tuketiciBasvuru">Tüketici Uyuşmazlıklarında Arabuluculuk Başvurusu</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./hizmetler.html#hizmetler">Hizmetlerimiz</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./ekibimiz.html#ekibimiz">Ekibimiz</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./hesaplamalar.html#hesaplamalar">Hesaplamalar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./iletisim.html#iletisim">İletişim</a>
-        </li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Anasayfa</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Arabuluculuk</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukNedir">Arabulucuk Nedir</a></li>
+                <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukSüreci">Arabuluculuk Süreci</a></li>
+                <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukÜcreti">Arabuluculuk Ücreti</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./arabuluculuk.html#sorulanSorular">Sıkça Sorulan Sorular</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Formlar</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./formlar.html#ticariBasvuru">Ticari Uyuşmazlıklarda Arabuluculuk Başvurusu</a></li>
+              <li><a class="dropdown-item" href="./formlar.html#isBasvuru">İş Uyuşmazlıklarında Arabuluculuk Başvurusu</a></li>
+              <li><a class="dropdown-item" href="./formlar.html#tuketiciBasvuru">Tüketici Uyuşmazlıklarında Arabuluculuk Başvurusu</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./hizmetler.html#hizmetlerimiz">Hizmetlerimiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./ekibimiz.html#ekibimiz">Ekibimiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./hesaplamalar.html#hesaplamalar">Hesaplamalar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./iletisim.html#iletisim">İletişim</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <div id="home" class="main-demo-hero">
     <div class="bg-overlay">                        
       <div class="hero-content-wrapper">
         <div class="hero-content">
-          <h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s" style="visibility: visible;animation-duration: 1.5s;animation-name: fadeInLeft;"><span>AGORA ARABULUCULUK VE</span><br><p class="titleColor">UYUŞMAZLIK ÇÖZÜM MERKEZİ</p></h1>
+          <h1 class="hero-lead wow fadeInLeft text-center" data-wow-duration="1.5s" style="visibility: visible;animation-duration: 1.5s;animation-name: fadeInLeft;"><span>AGORA</span><br><span>ARABULUCULUK VE</span><br><p class="titleColor">UYUŞMAZLIK ÇÖZÜM MERKEZİ</p></h1>
         </div>
       </div>
     </div>
@@ -70,7 +75,7 @@
     <section id="basvuruFormları"> 
       <h2 style="margin-bottom: 36px;">Arabuluculuk Başvuru Formları</h2>
     </section>
-    <section id="ticariBasvuru" style="margin-bottom: 36px;">
+    <section id="ticariBasvuru" class="mb-5">
       <h3>Ticari Uyuşmazlıklarda Arabuluculuk Başvurusu</h3>
       <p>Ticari Uyuşmazlıklarda Arabuluculuk Başvurusu Nasıl Yapılır? Arabuluculuk Başvuru Formu Nasıl Düzenlenir?</p>
       <p><strong> Arabuluculuk Başvurusu İki Şekilde Yapılabilir: </strong></p>
@@ -94,7 +99,7 @@
       <p>Bu şekilde başvuru yapıldığında arabulucu, arabuluculuk başvuru formunda bilgileri verilen diğer tarafı başvuru hakkında bilgilendirir ve davet eder. Karşı taraf uyuşmazlığın arabuluculuk yolu ile çözülmesini isterse daveti kabul eder ve süreç işlemeye başlar.</p>
       <p>Yakında çıkması beklenen Arabuluculuk Kanunu ile akredite olan merkezlerin, adliye büroları gibi başvuru alması mümkün olacaktır. Bu durumda, dava şartı arabuluculuk kapsamındaki arabuluculuk başvurularında diğer tarafın kabulüne gerek kalmaksızın arabuluculuk süreci başvuru ile başlayacaktır.</p>
     </section>
-    <section id="isBasvuru" style="margin-bottom: 36px;">
+    <section id="isBasvuru" class="mb-5">
       <h3>İş Uyuşmazlıklarında Arabuluculuk Başvurusu</h3>
       <p>İş Uyuşmazlıklarda Arabuluculuk Başvurusu Nasıl Yapılır? Arabuluculuk Başvuru Formu Nasıl Düzenlenir?</p>
       <p><strong> Arabuluculuk Başvurusu İki Şekilde Yapılabilir: </strong></p>
@@ -117,7 +122,7 @@
       <p>Bu şekilde başvuru yapıldığında arabulucu, arabuluculuk başvuru formunda bilgileri verilen diğer tarafı başvuru hakkında bilgilendirir ve davet eder. Karşı taraf uyuşmazlığın arabuluculuk yolu ile çözülmesini isterse daveti kabul eder ve süreç işlemeye başlar.</p>
       <p>Yakında çıkması beklenen Arabuluculuk Kanunu ile akredite olan merkezlerin, adliye büroları gibi başvuru alması mümkün olacaktır. Bu durumda, dava şartı arabuluculuk kapsamındaki arabuluculuk başvurularında diğer tarafın kabulüne gerek kalmaksızın arabuluculuk süreci başvuru ile başlayacaktır.</p>
     </section>
-    <section id="tuketiciBasvuru" style="margin-bottom: 36px;">
+    <section id="tuketiciBasvuru">
       <h3>Tüketici Uyuşmazlıklarında Arabuluculuk Başvurusu</h3>
       <p>Tüketici Uyuşmazlıklarında Arabuluculuk Başvurusu Nasıl Yapılır? Arabuluculuk Başvuru Formu Nasıl Düzenlenir?</p>
       <p>
@@ -140,15 +145,15 @@
       <p>Yakında çıkması beklenen Arabuluculuk Kanunu ile akredite olan merkezlerin, adliye büroları gibi başvuru alması mümkün olacaktır. Bu durumda, dava şartı arabuluculuk kapsamındaki arabuluculuk başvurularında diğer tarafın kabulüne gerek kalmaksızın arabuluculuk süreci başvuru ile başlayacaktır.</p>
     </section>
   </section>
-  <section id="footer">
+  <section id="footer" class="mt-5">
     <div class="container">
-      <footer class="row row-cols-5 py-5 mt-5">
-        <div class="col-2">
+      <footer class="row p2-b p2-t">
+        <div class="col-12 col-md-2 d-none d-md-flex">
           <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
             <img class="img-fluid" src="/assets/images/agoralogo3.png" width="120" alt="">
           </a>
         </div>
-        <div class="col-6 me-5">
+        <div class="col-12 col-md-6 p2-e">
           <h5>İletişim</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa-solid fa-envelope"></i> info@agoraarabuluculuk.com</a></li>
@@ -162,10 +167,10 @@
             <li class="nav-item "><a href="#" class="nav-link p-0 "><i class="fa-brands fa-youtube"></i></a></li>
           </ul>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-4">
           <p>Mail ile bilgilendirilmek isterseniz e-mail adresinizi bize bırakın size geri dönüş sağlayalım.</p>
-          <form class="footer-newsletter mt-4">
-            <input class="btn"  type="email" name="email" placeholder="E-Mail Adresiniz" required="">
+          <form id="email-form" class="mt-4">
+            <input id="email" class="btn"  type="email" name="email" placeholder="E-Mail Adresiniz" required="">
             <button class="btn" type="submit"><i class="fa fa-paper-plane"></i></button>
           </form>
         </div>
@@ -173,7 +178,6 @@
       <div class="pb-3 text-center text-muted">Copyright © 2023 All Rights Reserved</div>
     </div>
   </section>
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

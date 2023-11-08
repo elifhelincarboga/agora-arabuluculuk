@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/style/agora.css ">
+  <title>AGORA</title>
   <link rel="icon" href="./assets/images/agoralogo3.png"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -12,184 +12,189 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-  <title>AGORA</title>
+  <link rel="stylesheet" href="assets/style/agora.css ">
 </head>
 <body class="bg-light">
-  <nav class="navbar navbar-default navbar-fixed-top mega trans-helper navbar-trans navbar-trans-dark pt-0 pb-0">
+  <nav class="navbar navbar-default navbar-fixed-top mega trans-helper navbar-trans navbar-trans-dark pt-0 pb-0 navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">
         <img class="img-fluid" src="./assets/images/agoralogo3.png" width="80" alt="">
       </a>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.html">Anasayfa</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Arabuluculuk</a>
-          <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukNedir">Arabulucuk Nedir</a></li>
-              <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukSüreci">Arabuluculuk Süreci</a></li>
-              <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukÜcreti">Arabuluculuk Ücreti</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="./arabuluculuk.html#sorulanSorular">Sıkça Sorulan Sorular</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Formlar</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./formlar.html#ticariBasvuru">Ticari Uyuşmazlıklarda Arabuluculuk Başvurusu</a></li>
-            <li><a class="dropdown-item" href="./formlar.html#isBasvuru">İş Uyuşmazlıklarında Arabuluculuk Başvurusu</a></li>
-            <li><a class="dropdown-item" href="./formlar.html#tuketiciBasvuru">Tüketici Uyuşmazlıklarında Arabuluculuk Başvurusu</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./hizmetler.html#hizmetler">Hizmetlerimiz</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./ekibimiz.html#ekibimiz">Ekibimiz</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./hesaplamalar.html#hesaplamalar">Hesaplamalar</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./iletisim.html#iletisim">İletişim</a>
-        </li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Anasayfa</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Arabuluculuk</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukNedir">Arabulucuk Nedir</a></li>
+                <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukSüreci">Arabuluculuk Süreci</a></li>
+                <li><a class="dropdown-item" href="./arabuluculuk.html#arabuluculukÜcreti">Arabuluculuk Ücreti</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./arabuluculuk.html#sorulanSorular">Sıkça Sorulan Sorular</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Formlar</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./formlar.html#ticariBasvuru">Ticari Uyuşmazlıklarda Arabuluculuk Başvurusu</a></li>
+              <li><a class="dropdown-item" href="./formlar.html#isBasvuru">İş Uyuşmazlıklarında Arabuluculuk Başvurusu</a></li>
+              <li><a class="dropdown-item" href="./formlar.html#tuketiciBasvuru">Tüketici Uyuşmazlıklarında Arabuluculuk Başvurusu</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./hizmetler.html#hizmetlerimiz">Hizmetlerimiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./ekibimiz.html#ekibimiz">Ekibimiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./hesaplamalar.html#hesaplamalar">Hesaplamalar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./iletisim.html#iletisim">İletişim</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <div id="home" class="main-demo-hero">
     <div class="bg-overlay">                        
       <div class="hero-content-wrapper">
         <div class="hero-content">
-          <h1 class="hero-lead wow fadeInLeft" data-wow-duration="1.5s" style="visibility: visible;animation-duration: 1.5s;animation-name: fadeInLeft;"><span>AGORA ARABULUCULUK VE</span><br><p class="titleColor">UYUŞMAZLIK ÇÖZÜM MERKEZİ</p></h1>
+          <h1 class="hero-lead wow fadeInLeft text-center" data-wow-duration="1.5s" style="visibility: visible;animation-duration: 1.5s;animation-name: fadeInLeft;"><span>AGORA</span><br><span>ARABULUCULUK VE</span><br><p class="titleColor">UYUŞMAZLIK ÇÖZÜM MERKEZİ</p></h1>
         </div>
       </div>
     </div>
   </div>
   <section id="spec" class="container">
-    <section id="arabuluculukNedir" style="margin-bottom: 36px;"> 
-        <h2>Arabuluculuk Nedir</h2>
-        <p>
-          Arabuluculuk, Türk hukukunda 6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu ve 02.06.2018 tarihli Resmî Gazete’de yayımlanarak yürürlüğe giren Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu Yönetmeliği ile düzenlenmiştir.
-        </p>
-        <p>
-          Arabuluculuk doktrinde yapılan bir tanıma göre "meydana gelen uyuşmazlığın, tarafların iradî olarak başvurmaları sonucu arabulucu (veya uzlaştırman) olarak adlandırılan tarafsız ve güvenilir bir üçüncü kişi yardımıyla üzerinde anlaştıkları yöntem ve esaslara göre, karşılıklı iletişimle iki tarafın ortak menfaati esas alınarak çözümlenmesidir.”
-        </p>
-        <p>
-          Arabuluculuk, tarafların tamamen gönüllü şekilde bağımsız bir arabulucunun katılımı ile bir araya gelerek sorunlarına kendilerinin çözüm bulmasının amaçlandığı bir dostane uyuşmazlık çözüm yoludur.
-        </p>
-        <p>
-          Arabuluculuk bugün itibariyle özel hukuka ilişkin uyuşmazlıklarda en yaygın şekilde uygulanan alternatif uyuşmazlık çözüm yoludur.
-        </p>
-        <p>
-          Arabuluculuğun bilinen ilk örneklerine 4000 yıl önce rastlanmıştır. Ancak dünyadaki ilk örnekleri çok eskiye dayansa da batı ülkelerinin geleneksel uyuşmazlık çözüm yolu “dava”, uzak doğu ülkelerinin geleneksel çözüm yolu “anlaşmaya dayalı uyuşmazlık çözümü”dür. Bu nedenle uzlaşma kültürü ve arabuluculuk anlayışla ve topluma bu konuda zaman tanıyarak gelişecektir.
-        </p>
-        <p>
-          Ülkemizde ve Avrupa’da alternatif uyuşmazlık çözüm yöntemlerine ilgi git gide artmaktadır. Zaten Anglo-Sakson menşeili olan arabuluculuğun aktif şekilde kullanılmasında en ön sıralarda yer alan ülkelerden biri Amerika Birleşik Devletleri olup, ülkedeki uyuşmazlıkların %90’ı alternatif uyuşmazlık çözüm yolları ile çözümlenmektedir. Amerika Birleşik Devletleri’ndeki gelişmeler diğer Anglo-Sakson ülkeleri de hızla etkilemiş ve nihayetinde de daha yavaş da olsa kara Avrupası ülkelerinde de alternatif uyuşmazlık çözüm yolları gelişim göstermiştir ve göstermeye de devam etmektedir.
-        </p>
-        <p>
-          <strong>Arabulucu;</strong> hukuk fakültesi mezunu, en az beş yıllık deneyime sahip, iletişim teknikleri konularında uzmanlık eğitimi almış olan kişilerdir. Arabulucu, taraflardan bağımsız ve tamamen tarafsız bir üçüncü kişidir.
-        </p>
-        <p>
-          Arabulucu, uyuşmazlığın çözümünü bulmak yerine, tarafların sorunları üzerine müzakere etmeleri ve çözümlerini de yine kendilerinin bulacağı bir anlaşma sağlamalarına yardımcı olacak ortamı yaratır.
-        </p>
-        <p>
-          Arabulucu, taraflara hukuki öneri ve tavsiyelerde bulunamaz yahut taraflarca oluşturulan çözüm önerisi üzerinde mutabık kalınması için tarafları yönlendiremez. Yalnızca 7036 sayılı Kanunun 22. maddesi ile yapılan değişiklik ile HUAK’ın 15. maddesine 7. fıkra eklenmiş ve tarafların çözüm üretemediklerinin ortaya çıkması hâlinde arabulucunun bir çözüm önerisinde bulunabileceği belirtilmiştir. Ancak yapılan bu değişiklik, arabulucunun çözüm önerisinde bulunmasının kurumun özü ile bağdaşmaması ve sınırının belirsizliği sebepleri ile doktrinde eleştirilere maruz kalmıştır. 
-        </p>
-        <p>
-          Arabulucu, tarafların şayet varsa kendi ürettikleri çözümü bulmalarına aracılık etmektedir. Arabuluculuk sürecinde amaç, tarafların menfaatlerindeki dengeyi yakalamak, hukuken haklı veya haksızı bulmak değil, her iki tarafın da tatmin olacağı, kimsenin kaybetmeyeceği, aksine her iki tarafın da kazanacağı bir sonuca varmaktır. Doktrinde çok geniş anlamıyla arabuluculuk bağlayıcı bir karar verme yetki ve gücüne sahip olmayan, anlaşmayı kolaylaştıran üçüncü bir kişinin katıldığı müzakere temelli bir uyuşmazlık çözüm yöntemi olarak tanımlanmaktadır.
-          <small style="font-size: 10px;">( *SEVDE CANİK, “ARABULUCULUK FAALİYETİ SONUCUNDA DÜZENLENEN ANLAŞMA BELGELERİNİN İCRASI”, DOKUZ EYLÜL HUKUK FAKÜLTESİ ÖZEL HUKUK YÜKSEK LİSANS TEZİ, İZMİR, 2022)</small>
-        </p>
+    <section id="arabuluculukNedir" class="mb-5"> 
+      <h2>Arabuluculuk Nedir</h2>
+      <p>
+        Arabuluculuk, Türk hukukunda 6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu ve 02.06.2018 tarihli Resmî Gazete’de yayımlanarak yürürlüğe giren Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu Yönetmeliği ile düzenlenmiştir.
+      </p>
+      <p>
+        Arabuluculuk doktrinde yapılan bir tanıma göre "meydana gelen uyuşmazlığın, tarafların iradî olarak başvurmaları sonucu arabulucu (veya uzlaştırman) olarak adlandırılan tarafsız ve güvenilir bir üçüncü kişi yardımıyla üzerinde anlaştıkları yöntem ve esaslara göre, karşılıklı iletişimle iki tarafın ortak menfaati esas alınarak çözümlenmesidir.”
+      </p>
+      <p>
+        Arabuluculuk, tarafların tamamen gönüllü şekilde bağımsız bir arabulucunun katılımı ile bir araya gelerek sorunlarına kendilerinin çözüm bulmasının amaçlandığı bir dostane uyuşmazlık çözüm yoludur.
+      </p>
+      <p>
+        Arabuluculuk bugün itibariyle özel hukuka ilişkin uyuşmazlıklarda en yaygın şekilde uygulanan alternatif uyuşmazlık çözüm yoludur.
+      </p>
+      <p>
+        Arabuluculuğun bilinen ilk örneklerine 4000 yıl önce rastlanmıştır. Ancak dünyadaki ilk örnekleri çok eskiye dayansa da batı ülkelerinin geleneksel uyuşmazlık çözüm yolu “dava”, uzak doğu ülkelerinin geleneksel çözüm yolu “anlaşmaya dayalı uyuşmazlık çözümü”dür. Bu nedenle uzlaşma kültürü ve arabuluculuk anlayışla ve topluma bu konuda zaman tanıyarak gelişecektir.
+      </p>
+      <p>
+        Ülkemizde ve Avrupa’da alternatif uyuşmazlık çözüm yöntemlerine ilgi git gide artmaktadır. Zaten Anglo-Sakson menşeili olan arabuluculuğun aktif şekilde kullanılmasında en ön sıralarda yer alan ülkelerden biri Amerika Birleşik Devletleri olup, ülkedeki uyuşmazlıkların %90’ı alternatif uyuşmazlık çözüm yolları ile çözümlenmektedir. Amerika Birleşik Devletleri’ndeki gelişmeler diğer Anglo-Sakson ülkeleri de hızla etkilemiş ve nihayetinde de daha yavaş da olsa kara Avrupası ülkelerinde de alternatif uyuşmazlık çözüm yolları gelişim göstermiştir ve göstermeye de devam etmektedir.
+      </p>
+      <p>
+        <strong>Arabulucu;</strong> hukuk fakültesi mezunu, en az beş yıllık deneyime sahip, iletişim teknikleri konularında uzmanlık eğitimi almış olan kişilerdir. Arabulucu, taraflardan bağımsız ve tamamen tarafsız bir üçüncü kişidir.
+      </p>
+      <p>
+        Arabulucu, uyuşmazlığın çözümünü bulmak yerine, tarafların sorunları üzerine müzakere etmeleri ve çözümlerini de yine kendilerinin bulacağı bir anlaşma sağlamalarına yardımcı olacak ortamı yaratır.
+      </p>
+      <p>
+        Arabulucu, taraflara hukuki öneri ve tavsiyelerde bulunamaz yahut taraflarca oluşturulan çözüm önerisi üzerinde mutabık kalınması için tarafları yönlendiremez. Yalnızca 7036 sayılı Kanunun 22. maddesi ile yapılan değişiklik ile HUAK’ın 15. maddesine 7. fıkra eklenmiş ve tarafların çözüm üretemediklerinin ortaya çıkması hâlinde arabulucunun bir çözüm önerisinde bulunabileceği belirtilmiştir. Ancak yapılan bu değişiklik, arabulucunun çözüm önerisinde bulunmasının kurumun özü ile bağdaşmaması ve sınırının belirsizliği sebepleri ile doktrinde eleştirilere maruz kalmıştır. 
+      </p>
+      <p>
+        Arabulucu, tarafların şayet varsa kendi ürettikleri çözümü bulmalarına aracılık etmektedir. Arabuluculuk sürecinde amaç, tarafların menfaatlerindeki dengeyi yakalamak, hukuken haklı veya haksızı bulmak değil, her iki tarafın da tatmin olacağı, kimsenin kaybetmeyeceği, aksine her iki tarafın da kazanacağı bir sonuca varmaktır. Doktrinde çok geniş anlamıyla arabuluculuk bağlayıcı bir karar verme yetki ve gücüne sahip olmayan, anlaşmayı kolaylaştıran üçüncü bir kişinin katıldığı müzakere temelli bir uyuşmazlık çözüm yöntemi olarak tanımlanmaktadır.
+        <small style="font-size: 10px;">( *SEVDE CANİK, “ARABULUCULUK FAALİYETİ SONUCUNDA DÜZENLENEN ANLAŞMA BELGELERİNİN İCRASI”, DOKUZ EYLÜL HUKUK FAKÜLTESİ ÖZEL HUKUK YÜKSEK LİSANS TEZİ, İZMİR, 2022)</small>
+      </p>
     </section>
-    <section id="arabuluculukSüreci" style="margin-bottom: 36px;"> 
-        <h2>Arabuluculuk Süreci</h2>
-        <p>
-            Taraflar dava açmadan önce veya dava süresince uyuşmazlıklarının çözümü için arabuluculuğa başvurabilirler. Ülkemizde pek çok dava arabuluculuğa başvurmadan açılamamaktadır. Hangi konularda arabuluculuğa başvurmadan dava açılamayacağı konusunda mutlaka profesyonel hukuki destek alınması gerekir.
-        </p>
-        <p>
-          Arabuluculuğun ülkemizdeki en temel mevzuatı olan Hukuk Uyuşmazlıklarından Arabuluculuk Kanunu (HUAK) ‘ ta “Arabuluculuğa İlişkin Temel İlkeler” başlıklı ikinci bölümünün 3, 4 ve 5. ve Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu Yönetmeliği'nin (Yönetmelik) de aynı başlıklı 5, 6 ve 7. maddelerinde belirtilen temel ilkeleri, iradî olma (gönüllülük) ve eşitlik, gizlilik ile beyan ve belgelerin kullanılamaması yani güvendir.
-        </p>
-        <p>
-          Tarafların arabuluculuğa başvurmaları, sürece katılım göstermeleri ve istekleri iradîlik ilkesinin gereğidir.
-        </p>
-        <p>
-          HUAK’ın 3. ve Yönetmeliğin 5. maddesinde belirtilen eşitlik ilkesi; tarafların arabuluculuk sürecinde, arabulucuya başvurudan sürecin sonuçlanmasına kadar eşit haklara sahip olmalarını ifade etmektedir.
-          <small style="font-size: 10px;">( *SEVDE CANİK, “ARABULUCULUK FAALİYETİ SONUCUNDA DÜZENLENEN ANLAŞMA BELGELERİNİN İCRASI”, DOKUZ EYLÜL HUKUK FAKÜLTESİ ÖZEL HUKUK YÜKSEK LİSANS TEZİ, İZMİR, 2022)</small>
-        </p>
+    <section id="arabuluculukSüreci" class="mb-5"> 
+      <h2>Arabuluculuk Süreci</h2>
+      <p>
+          Taraflar dava açmadan önce veya dava süresince uyuşmazlıklarının çözümü için arabuluculuğa başvurabilirler. Ülkemizde pek çok dava arabuluculuğa başvurmadan açılamamaktadır. Hangi konularda arabuluculuğa başvurmadan dava açılamayacağı konusunda mutlaka profesyonel hukuki destek alınması gerekir.
+      </p>
+      <p>
+        Arabuluculuğun ülkemizdeki en temel mevzuatı olan Hukuk Uyuşmazlıklarından Arabuluculuk Kanunu (HUAK) ‘ ta “Arabuluculuğa İlişkin Temel İlkeler” başlıklı ikinci bölümünün 3, 4 ve 5. ve Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu Yönetmeliği'nin (Yönetmelik) de aynı başlıklı 5, 6 ve 7. maddelerinde belirtilen temel ilkeleri, iradî olma (gönüllülük) ve eşitlik, gizlilik ile beyan ve belgelerin kullanılamaması yani güvendir.
+      </p>
+      <p>
+        Tarafların arabuluculuğa başvurmaları, sürece katılım göstermeleri ve istekleri iradîlik ilkesinin gereğidir.
+      </p>
+      <p>
+        HUAK’ın 3. ve Yönetmeliğin 5. maddesinde belirtilen eşitlik ilkesi; tarafların arabuluculuk sürecinde, arabulucuya başvurudan sürecin sonuçlanmasına kadar eşit haklara sahip olmalarını ifade etmektedir.
+        <small style="font-size: 10px;">( *SEVDE CANİK, “ARABULUCULUK FAALİYETİ SONUCUNDA DÜZENLENEN ANLAŞMA BELGELERİNİN İCRASI”, DOKUZ EYLÜL HUKUK FAKÜLTESİ ÖZEL HUKUK YÜKSEK LİSANS TEZİ, İZMİR, 2022)</small>
+      </p>
     </section>
-    <section id="arabuluculukÜcreti" style="margin-bottom: 36px;"> 
+    <section id="arabuluculukÜcreti" class="mb-5"> 
       <h2>Arabuluculuk Ücreti</h2>
       <p>
         Taraflar aksini kararlaştırmadıkça, arabuluculuk ücretini eşit olarak öderler. Arabuluculuk ücretini hesaplamak için <a href="./hesaplamalar.html#hesaplama">"Hesaplamalar"</a> sayfamızı ziyaret edebilirsiniz.
       </p>
     </section>
     <section id="sorulanSorular"> 
-        <h2>Sıkça Sorulan Sorular</h2>
-        <p class="fw-bold">Hangi Uyuşmazlıklarda Arabuluculuk Uygulanır? </p>
-        <p>Tarafların üzerinde serbestçe tasarruf edebilecekleri her türlü iş veya işlemlerden doğan özel hukuk uyuşmazlıklarında arabuluculuk uygulanır. İş hukukundan ve ticaret hukukundan kaynaklanan uyuşmazlıklar zorunlu arabuluculuk kapsamındadır. İşe iade, kıdem tazminatı, ihbar tazminatı, ücret alacağı, fazla mesai alacağı, yıllık ücretli izin alacağı, abonelik sözleşmelerinden kaynaklı para alacakları, rekabet yasağına ilişkin uyuşmazlıklar, komisyon sözleşmelerinden kaynaklanan alacaklar, kooperatif kanunundan ve cari hesaptan kaynaklanan alacaklar gibi birçok uyuşmazlıkta dava açmadan önce arabulucuya başvurmak zorunludur. Kira alacağı, boşanma sonrası mal tasfiyesi, izaley-i şuyu, malpraktis, iş kazalarından kaynaklı maddi manevi tazminat, destekten yoksun kalma tazminatı, inşaat, eser sözleşmesinden kaynaklanan uyuşmazlıklar gibi pek çok konu arabuluculuğa elverişlidir. Bu gibi durumda taraflar veya kanuni temsilcileri bir arabulucu veya arabuluculuk merkezine başvurarak arabuluculuk yoluyla uyuşmazlığa çözüm getirebilirler.</p>
-        <p class="fw-bold">Arabulucu Nasıl Seçilir?</p>
-        <p>Taraflar arabulucuyu kendileri seçebilirler. Taraflar arabulucunun kim olacağı konusunda anlaşmaya varamazlar ise, dava şartı arabuluculukta arabulucu, adliyelerdeki arabuluculuk bürolarındaki görevli personel tarafından sicile kayıtlı arabulucular listesinden atanır.</p>
-        <p class="fw-bold">Arabulucular Ne Yapar?</p>
-        <p>rabulucu, bu süreçte karar veren kişi değildir. Sadece taraflara gerektiğinde çözüm önerileri getirebilir. Taraflar uyuşmazlığı kendileri uzlaşarak çözerler. Arabulucu, tarafların aralarındaki asıl uyuşmazlığı ve menfaatlerini tespit ederek bu konularda tartışmalarını ve çözüm bulmalarını sağlamaya çalışır. Burada taraflar kendi çözümlerini kendileri üretirler ve bunu yaparken birbirlerini anlamaya çalışırlar.</p>
-        <p class="fw-bold">Kira İlişkisinden Doğan Uyuşmazlıklar Arabuluculukta Çözülebilir Mi?</p>
-        <p>Her türlü kira alacağından doğan uyuşmazlıklar arabuluculuk yöntemiyle çözümlenebilir. Her iki tarafın ticari işletme olması halinde kira alacakları dava şartı arabuluculuk kapsamındadır ve dava açmadan önce arabulucuya başvurulması kanuni bir zorunluluktur. Uyuşmazlık yaşayan taraflar, adliyelerdeki arabuluculuk bürolarına başvurabilecekleri gibi yetkinliğine güvendikleri bir arabulucuya veya arabuluculuk merkezine de başvurabilirler. Arabuluculuk görüşmeleri, merkezlerde veya arabulucu ofislerinde yüz yüze yapılabilir, bu durumda taraflar toplantının sosyal mesafenin korunabildiği bir mekanda yapılmasını talep edebilirler. Aynı zamanda sağlık tedbirleri kapsamında ve tarafların talebiyle arabuluculuk görüşmeleri telekonferans veya video konferans yoluyla gerçekleştirilebilir.</p>    
-        <p class="fw-bold">İtirazın İptali Davaları Zorunlu Arabuluculuk Kapsamında Mıdır?</p>   
-        <p>İtirazın iptali davalarının zorunlu arabuluculuk kapsamında olup olmadığını, ilişkinin esası belirler.  Konusu bir miktar para alacağı ve tazminatlar, dava şartı arabuluculuk kapsamında değilse taraflar ihtiyari olarak uyuşmazlığı arabulucuda çözümleyebilirler. Örneğin kira ilişkisinden kaynaklı alacaklar zorunlu arabuluculuk sürecine tabi olmadığından itirazın iptali davası da zorunlu arabuluculuk sürecine tabi değildir. Bu halde ihtiyari arabuluculukla çözüme gidilebilir. Ancak her iki tarafı tacir olan kira sözleşmelerinden kaynaklı itirazın iptali davaları zorunlu arabuluculuk kapsamındadır.  Bu her iki durumda da taraflar veya kanuni temsilcileri bir arabulucu veya arabuluculuk merkezine başvurarak arabuluculuk yoluyla soruna çözüm getirebilirler.</p>
-        <p class="fw-bold">Arabuluculuğun Dava Şartı Olması Ne Demek?</p>
-        <p>İşçi-işveren ilişkisinden kaynaklanan uyuşmazlıklar ile ticari uyuşmazlıklarda dava açmak isteyen tarafın öncelikle arabuluculuk yoluna gitmesi gerekmektedir. Arabuluculuğa başvurulmadan dava açılması durumunda, dava, dava şartı yokluğundan reddedilecektir</p>
-        <p class="fw-bold">Arabuluculuk Pahalı Bir Yöntem mi?</p>
-        <p>Süreç sonuçlanıncaya kadar arabuluculuk sürecinde taraflar, davadan farklı olarak herhangi bir harç yatırmak zorunda olmayıp, tebligat, bilirkişi, tanık ve keşif gibi giderler de ödemezler. Sadece, faaliyet süresine göre arabulucuya, Arabuluculuk Asgari Ücret Tarifesine uyarınca ücret ödenir. Ayrıca, özel bir toplantı yeri vs. gerekiyorsa, bu masrafların ödenmesi gerekir. Taraflar eğer avukatları ile bu sürece katılacaklarsa avukatlarına da ücret ödeyeceklerdir.</p>
-        <p class="fw-bold">Arabulucuya Ödenecek Ücret Ne Kadardır ve Hangi Taraf Öder?</p>
-        <p>Dava şartı arabuluculuk işlerinde taraflar arabuluculuk görüşmelerinde anlaşamazlarsa arabulucuya bir ücret ödemezler. Bu durumda arabuluculuk ücreti devlet tarafından ödenir ve davada haksız çıkan taraftan alınır. Anlaşma durumunda ücret, aksi kararlaştırılmadıkça taraflarca eşit şekilde ödenir. Ücret, Arabuluculuk Asgari Ücret Tarifesine göre belirlenir. Arabuluculuk Ücret Tarifesi, Arabuluculuk Daire Başkanlığının resmi web sitesinde yer almaktadır.</p>
-        <p class="fw-bold">Arabuluculuk Yönteminin Mahkemeye Göre Avantajları Nelerdir?</p>
-        <ul>
-            <li>Dava boyunca yapmak zorunda kalacağınız tüm masraflardan (posta gideri, bilirkişi, keşif vb. masraflar, yol giderleriniz gibi) ve yargılama nedeniyle diğer işlerinizden kısıtlayıp, adliyeye ayırmak zorunda kalacağınız zamandan tasarruf etmiş olursunuz.</li>
-            <li>Mahkemeye göre daha kısa sürer.</li>
-            <li>Sonuç, tarafların kontrolündedir.</li>
-            <li >Geleceğe bakılır, mevcut hukuki durumun değil, menfaatin korunması esastır.</li>
-            <li>Güvenirlik ve gizlilik önemlidir; taraflar mahkeme önünde konuşamayacaklarını burada rahatlıkla konuşabilirler.</li>
-            <li>Psikolojik ve sosyolojik riski azdır; daha az yeni sorun doğurur.</li>
-            <li>Tarafların anlaştıkları yöntem ve çözüm tarzı esastır, esnektir.</li>
-            <li>Anlaşmayla çözülür; iki tarafta kazanır, tarafların sosyal ve ekonomik ilişkileri devam eder.</li>
-        </ul>
-        <p class="fw-bold">Hangi Aşamada Arabuluculuk Yoluna Gidilebilir?</p>
-        <p>Karşı tarafla aranızda uyuşmazlık çıktıktan ve fakat mahkeme veya tahkime başvurmadan önce arabulucuya gidebileceğiniz gibi mahkemeye dava açtıktan sonra da arabulucuya gidebilirsiniz.</p>
-        <p class="fw-bold">Arabuluculuk Yoluna Başvurduğum Zaman Dava Hakkımı Kaybeder Miyim?</p>
-        <p>Hayır. Taraflar arabulucuya başvurmak, süreci devam ettirmek, sonuçlandırmak ve bu süreçten vazgeçmek konusunda tamamen serbesttir. Kendi isteğiniz ile başlattığınız bu süreci yine kendi isteğinizle sona erdirip mahkemeye başvurabilirsiniz.
-            Ancak arabuluculuk faaliyeti sonunda anlaşmaya varılması halinde, artık bir uyuşmazlık konusu kalmadığı için doğal olarak; üzerinde anlaşılan hususlar hakkında taraflarca dava açılamaz.</p>
-        <p class="fw-bold">Hangi Hallerde Arabuluculuk Faaliyeti Sona Erer?</p>
-        <p>Aşağıda belirtilen hâllerde arabuluculuk faaliyeti sona erer:</p>
-        <ul>
-            <li>Tarafların uyuşmazlık konusu üzerinde anlaşmaya varması.</li>
-            <li>Taraflardan birinin karşı tarafa veya arabulucuya, arabuluculuk faaliyetinden çekildiğini bildirmesi.</li>
-            <li>Tarafların anlaşarak arabuluculuk faaliyetini sona erdirmesi.</li>
-            <li>Taraflara danışıldıktan sonra arabuluculuk için daha fazla çaba sarf edilmesinin gereksiz olduğunun arabulucu tarafından tespit edilmesi.</li>
-            <li>Uyuşmazlığın arabuluculuğa elverişli olmadığının tespit edilmesi.</li>
-        </ul>
-        <p class="fw-bold">Arabuluculuk Anlaşma Belgesindeki Yükümlülükler İfa Edilmezse Ne Yapılabilir?</p>   
-        <p>Taraflar dava açılmadan önce yürütülen arabuluculuk sürecinin sonunda bir anlaşmaya varırlarsa bu anlaşmanın icra edilebilirliğine ilişkin şerh verilmesi, Sulh Hukuk Mahkemesinden talep edilebilir. Taraflar arabuluculuk sonucunda verilen kararı mahkeme nezdinde onaylatırlar. Bu onaylatmadan sonra, ilgili karar mahkeme kararı niteliğini kazanır. Arabuluculuk anlaşma belgesindeki yükümlülükler yerine getirilmezse ifa edilmezse, söz konusu karar icra marifetiyle yerine getirtilir.
-            Tarafların ve avukatlarının birlikte imzaladığı arabuluculuk anlaşma belgeleri ise mahkemeden şerh alınmasına gerek olmaksızın, mahkeme kararı gibi icraya konulabilir.</p>
-        <p class="fw-bold">İşçi işveren ilişkisinde rekabet yasağından kaynaklanan uyuşmazlıklar hangi tür arabuluculuğa tabidir?</p>
-        <p>İşçi işveren ilişkisinde iş sözleşmede rekabet yasağı hükmü varsa  arabuluculuk süreci için ikili bir ayrıma gidilir. İş sözleşmesi devam ediyorken işçi rekabet yasağını ihlal etmişse arabuluculuk iş uyuşmazlıklarına ilişkindir ve işçi işveren uyuşmazlıklarında dava şartı arabuluculuk kapsamındadır.  Şayet iş ilişkisi sona erdikten sonra rekabet yasağına aykırılıktan kaynaklanan uyuşmazlık varsa  ticari uyuşmazlık dava şartı arabuluculuk kapsamındadır.  Bu her iki durumda da taraflar bir arabulucuya veya arabuluculuk merkezine başvurarak arabuluculuk sürecini başlatabilirler.</p>        
-        <p class="fw-bold">İşe iade talepli arabuluculuk başvurularında anlaşma tutanağı nasıl olmalıdır?</p>
-        <p>İşe iade talepli arabuluculuk başvurularında şayet taraflar işçinin işe iadesi konusunda anlaşmışlarsa, anlaşma tutanak içeriği İş Kanunu 21. Maddesine göre şu hususları içermelidir; işe başlatma tarihini,dört aylık doğmuş ücret ve diğer hakların parasal miktarını, işçinin işe başlatılmaması durumunda işe başlatmama tazminatının parasal miktarını, arabuluculuk anlaşma tutanağı. Aksi takdirde anlaşma sağlanamamış sayılır ve son tutanak arabulucu tarafından anlaşmama olarak düzenlenmelidir.</p>
-        <p class="fw-bold">İtirazın İptali Davaları Zorunlu Arabuluculuk Kapsamında Mıdır?</p>
-        <p>İtirazın iptali davalarının zorunlu arabuluculuk kapsamında olup olmadığını, ilişkinin esası belirler. Konusu bir miktar para alacağı ve tazminatlar, dava şartı arabuluculuk kapsamında değilse taraflar ihtiyari olarak uyuşmazlığı arabulucuda çözümleyebilirler. Örneğin kira ilişkisinden kaynaklı alacaklar zorunlu arabuluculuk sürecine tabi olmadığından itirazın iptali davası da zorunlu arabuluculuk sürecine tabi değildir. Bu halde ihtiyari arabuluculukla çözüme gidilebilir. Ancak her iki tarafı tacir olan kira sözleşmelerinden kaynaklı itirazın iptali davaları zorunlu arabuluculuk kapsamındadır. Bu her iki durumda da taraflar veya kanuni temsilcileri bir arabulucu veya arabuluculuk merkezine başvurarak arabuluculuk yoluyla soruna çözüm getirebilirler.</p>
-        <p class="fw-bold">Hangi Uyuşmazlıklarda Arabuluculuk Uygulanır?</p>
-        <p>Tarafların üzerinde serbestçe tasarruf edebilecekleri her türlü iş veya işlemlerden doğan özel hukuk uyuşmazlıklarında arabuluculuk uygulanır. İş hukukundan ve ticaret hukukundan kaynaklanan uyuşmazlıklar zorunlu arabuluculuk kapsamındadır. İşe iade, kıdem tazminatı, ihbar tazminatı, ücret alacağı, fazla mesai alacağı, yıllık ücretli izin alacağı, abonelik sözleşmelerinden kaynaklı para alacakları, rekabet yasağına ilişkin uyuşmazlıklar, komisyon sözleşmelerinden kaynaklanan alacaklar, kooperatif kanunundan ve cari hesaptan kaynaklanan alacaklar gibi birçok uyuşmazlıkta dava açmadan önce arabulucuya başvurmak zorunludur. Kira alacağı, boşanma sonrası mal tasfiyesi, izale-i şuyu, malpraktis, iş kazalarından kaynaklı maddi manevi tazminat, destekten yoksun kalma tazminatı, inşaat, eser sözleşmesinden kaynaklanan uyuşmazlıklar gibi pek çok konu arabuluculuğa elverişlidir. Bu gibi durumda taraflar veya kanuni temsilcileri bir arabulucu veya arabuluculuk merkezine başvurarak arabuluculuk yoluyla uyuşmazlığa çözüm getirebilirler.</p>  
-        <p class="fw-bold">Arabuluculuk anlaşma belgeleri harç ve vergiye tabi midir?</p>   
-        <p>Anlaşma belgesine icra edilebilir şerhi verilebilmesi için mahkemeye yapılacak olan başvuru ile bunun üzerine verilecek karalara karşı ilgili tarafın istinaf yoluna gitmesi halinde maktu harç alınır. Arabuluculuk anlaşma belgelerine icra edilebilirlik şerhi verilmeden, taraflar başka resmi bir işlemde kullanmak isterlerse maktu damga vergisi öderler. Bunun haricinde arabuluculunun hazırladığı ve tarafların onayladığı anlaşma belgeleri için her hangi bir harç ya da vergi ödenmez.</p>    
+      <h2>Sıkça Sorulan Sorular</h2>
+      <p class="fw-bold">Hangi Uyuşmazlıklarda Arabuluculuk Uygulanır? </p>
+      <p>Tarafların üzerinde serbestçe tasarruf edebilecekleri her türlü iş veya işlemlerden doğan özel hukuk uyuşmazlıklarında arabuluculuk uygulanır. İş hukukundan ve ticaret hukukundan kaynaklanan uyuşmazlıklar zorunlu arabuluculuk kapsamındadır. İşe iade, kıdem tazminatı, ihbar tazminatı, ücret alacağı, fazla mesai alacağı, yıllık ücretli izin alacağı, abonelik sözleşmelerinden kaynaklı para alacakları, rekabet yasağına ilişkin uyuşmazlıklar, komisyon sözleşmelerinden kaynaklanan alacaklar, kooperatif kanunundan ve cari hesaptan kaynaklanan alacaklar gibi birçok uyuşmazlıkta dava açmadan önce arabulucuya başvurmak zorunludur. Kira alacağı, boşanma sonrası mal tasfiyesi, izaley-i şuyu, malpraktis, iş kazalarından kaynaklı maddi manevi tazminat, destekten yoksun kalma tazminatı, inşaat, eser sözleşmesinden kaynaklanan uyuşmazlıklar gibi pek çok konu arabuluculuğa elverişlidir. Bu gibi durumda taraflar veya kanuni temsilcileri bir arabulucu veya arabuluculuk merkezine başvurarak arabuluculuk yoluyla uyuşmazlığa çözüm getirebilirler.</p>
+      <p class="fw-bold">Arabulucu Nasıl Seçilir?</p>
+      <p>Taraflar arabulucuyu kendileri seçebilirler. Taraflar arabulucunun kim olacağı konusunda anlaşmaya varamazlar ise, dava şartı arabuluculukta arabulucu, adliyelerdeki arabuluculuk bürolarındaki görevli personel tarafından sicile kayıtlı arabulucular listesinden atanır.</p>
+      <p class="fw-bold">Arabulucular Ne Yapar?</p>
+      <p>rabulucu, bu süreçte karar veren kişi değildir. Sadece taraflara gerektiğinde çözüm önerileri getirebilir. Taraflar uyuşmazlığı kendileri uzlaşarak çözerler. Arabulucu, tarafların aralarındaki asıl uyuşmazlığı ve menfaatlerini tespit ederek bu konularda tartışmalarını ve çözüm bulmalarını sağlamaya çalışır. Burada taraflar kendi çözümlerini kendileri üretirler ve bunu yaparken birbirlerini anlamaya çalışırlar.</p>
+      <p class="fw-bold">Kira İlişkisinden Doğan Uyuşmazlıklar Arabuluculukta Çözülebilir Mi?</p>
+      <p>Her türlü kira alacağından doğan uyuşmazlıklar arabuluculuk yöntemiyle çözümlenebilir. Her iki tarafın ticari işletme olması halinde kira alacakları dava şartı arabuluculuk kapsamındadır ve dava açmadan önce arabulucuya başvurulması kanuni bir zorunluluktur. Uyuşmazlık yaşayan taraflar, adliyelerdeki arabuluculuk bürolarına başvurabilecekleri gibi yetkinliğine güvendikleri bir arabulucuya veya arabuluculuk merkezine de başvurabilirler. Arabuluculuk görüşmeleri, merkezlerde veya arabulucu ofislerinde yüz yüze yapılabilir, bu durumda taraflar toplantının sosyal mesafenin korunabildiği bir mekanda yapılmasını talep edebilirler. Aynı zamanda sağlık tedbirleri kapsamında ve tarafların talebiyle arabuluculuk görüşmeleri telekonferans veya video konferans yoluyla gerçekleştirilebilir.</p>    
+      <p class="fw-bold">İtirazın İptali Davaları Zorunlu Arabuluculuk Kapsamında Mıdır?</p>   
+      <p>İtirazın iptali davalarının zorunlu arabuluculuk kapsamında olup olmadığını, ilişkinin esası belirler.  Konusu bir miktar para alacağı ve tazminatlar, dava şartı arabuluculuk kapsamında değilse taraflar ihtiyari olarak uyuşmazlığı arabulucuda çözümleyebilirler. Örneğin kira ilişkisinden kaynaklı alacaklar zorunlu arabuluculuk sürecine tabi olmadığından itirazın iptali davası da zorunlu arabuluculuk sürecine tabi değildir. Bu halde ihtiyari arabuluculukla çözüme gidilebilir. Ancak her iki tarafı tacir olan kira sözleşmelerinden kaynaklı itirazın iptali davaları zorunlu arabuluculuk kapsamındadır.  Bu her iki durumda da taraflar veya kanuni temsilcileri bir arabulucu veya arabuluculuk merkezine başvurarak arabuluculuk yoluyla soruna çözüm getirebilirler.</p>
+      <p class="fw-bold">Arabuluculuğun Dava Şartı Olması Ne Demek?</p>
+      <p>İşçi-işveren ilişkisinden kaynaklanan uyuşmazlıklar ile ticari uyuşmazlıklarda dava açmak isteyen tarafın öncelikle arabuluculuk yoluna gitmesi gerekmektedir. Arabuluculuğa başvurulmadan dava açılması durumunda, dava, dava şartı yokluğundan reddedilecektir</p>
+      <p class="fw-bold">Arabuluculuk Pahalı Bir Yöntem mi?</p>
+      <p>Süreç sonuçlanıncaya kadar arabuluculuk sürecinde taraflar, davadan farklı olarak herhangi bir harç yatırmak zorunda olmayıp, tebligat, bilirkişi, tanık ve keşif gibi giderler de ödemezler. Sadece, faaliyet süresine göre arabulucuya, Arabuluculuk Asgari Ücret Tarifesine uyarınca ücret ödenir. Ayrıca, özel bir toplantı yeri vs. gerekiyorsa, bu masrafların ödenmesi gerekir. Taraflar eğer avukatları ile bu sürece katılacaklarsa avukatlarına da ücret ödeyeceklerdir.</p>
+      <p class="fw-bold">Arabulucuya Ödenecek Ücret Ne Kadardır ve Hangi Taraf Öder?</p>
+      <p>Dava şartı arabuluculuk işlerinde taraflar arabuluculuk görüşmelerinde anlaşamazlarsa arabulucuya bir ücret ödemezler. Bu durumda arabuluculuk ücreti devlet tarafından ödenir ve davada haksız çıkan taraftan alınır. Anlaşma durumunda ücret, aksi kararlaştırılmadıkça taraflarca eşit şekilde ödenir. Ücret, Arabuluculuk Asgari Ücret Tarifesine göre belirlenir. Arabuluculuk Ücret Tarifesi, Arabuluculuk Daire Başkanlığının resmi web sitesinde yer almaktadır.</p>
+      <p class="fw-bold">Arabuluculuk Yönteminin Mahkemeye Göre Avantajları Nelerdir?</p>
+      <ul>
+        <li>Dava boyunca yapmak zorunda kalacağınız tüm masraflardan (posta gideri, bilirkişi, keşif vb. masraflar, yol giderleriniz gibi) ve yargılama nedeniyle diğer işlerinizden kısıtlayıp, adliyeye ayırmak zorunda kalacağınız zamandan tasarruf etmiş olursunuz.</li>
+        <li>Mahkemeye göre daha kısa sürer.</li>
+        <li>Sonuç, tarafların kontrolündedir.</li>
+        <li >Geleceğe bakılır, mevcut hukuki durumun değil, menfaatin korunması esastır.</li>
+        <li>Güvenirlik ve gizlilik önemlidir; taraflar mahkeme önünde konuşamayacaklarını burada rahatlıkla konuşabilirler.</li>
+        <li>Psikolojik ve sosyolojik riski azdır; daha az yeni sorun doğurur.</li>
+        <li>Tarafların anlaştıkları yöntem ve çözüm tarzı esastır, esnektir.</li>
+        <li>Anlaşmayla çözülür; iki tarafta kazanır, tarafların sosyal ve ekonomik ilişkileri devam eder.</li>
+      </ul>
+      <p class="fw-bold">Hangi Aşamada Arabuluculuk Yoluna Gidilebilir?</p>
+      <p>Karşı tarafla aranızda uyuşmazlık çıktıktan ve fakat mahkeme veya tahkime başvurmadan önce arabulucuya gidebileceğiniz gibi mahkemeye dava açtıktan sonra da arabulucuya gidebilirsiniz.</p>
+      <p class="fw-bold">Arabuluculuk Yoluna Başvurduğum Zaman Dava Hakkımı Kaybeder Miyim?</p>
+      <p>Hayır. Taraflar arabulucuya başvurmak, süreci devam ettirmek, sonuçlandırmak ve bu süreçten vazgeçmek konusunda tamamen serbesttir. Kendi isteğiniz ile başlattığınız bu süreci yine kendi isteğinizle sona erdirip mahkemeye başvurabilirsiniz.
+          Ancak arabuluculuk faaliyeti sonunda anlaşmaya varılması halinde, artık bir uyuşmazlık konusu kalmadığı için doğal olarak; üzerinde anlaşılan hususlar hakkında taraflarca dava açılamaz.</p>
+      <p class="fw-bold">Hangi Hallerde Arabuluculuk Faaliyeti Sona Erer?</p>
+      <p>Aşağıda belirtilen hâllerde arabuluculuk faaliyeti sona erer:</p>
+      <ul>
+        <li>Tarafların uyuşmazlık konusu üzerinde anlaşmaya varması.</li>
+        <li>Taraflardan birinin karşı tarafa veya arabulucuya, arabuluculuk faaliyetinden çekildiğini bildirmesi.</li>
+        <li>Tarafların anlaşarak arabuluculuk faaliyetini sona erdirmesi.</li>
+        <li>Taraflara danışıldıktan sonra arabuluculuk için daha fazla çaba sarf edilmesinin gereksiz olduğunun arabulucu tarafından tespit edilmesi.</li>
+        <li>Uyuşmazlığın arabuluculuğa elverişli olmadığının tespit edilmesi.</li>
+      </ul>
+      <p class="fw-bold">Arabuluculuk Anlaşma Belgesindeki Yükümlülükler İfa Edilmezse Ne Yapılabilir?</p>   
+      <p>Taraflar dava açılmadan önce yürütülen arabuluculuk sürecinin sonunda bir anlaşmaya varırlarsa bu anlaşmanın icra edilebilirliğine ilişkin şerh verilmesi, Sulh Hukuk Mahkemesinden talep edilebilir. Taraflar arabuluculuk sonucunda verilen kararı mahkeme nezdinde onaylatırlar. Bu onaylatmadan sonra, ilgili karar mahkeme kararı niteliğini kazanır. Arabuluculuk anlaşma belgesindeki yükümlülükler yerine getirilmezse ifa edilmezse, söz konusu karar icra marifetiyle yerine getirtilir.
+          Tarafların ve avukatlarının birlikte imzaladığı arabuluculuk anlaşma belgeleri ise mahkemeden şerh alınmasına gerek olmaksızın, mahkeme kararı gibi icraya konulabilir.</p>
+      <p class="fw-bold">İşçi işveren ilişkisinde rekabet yasağından kaynaklanan uyuşmazlıklar hangi tür arabuluculuğa tabidir?</p>
+      <p>İşçi işveren ilişkisinde iş sözleşmede rekabet yasağı hükmü varsa  arabuluculuk süreci için ikili bir ayrıma gidilir. İş sözleşmesi devam ediyorken işçi rekabet yasağını ihlal etmişse arabuluculuk iş uyuşmazlıklarına ilişkindir ve işçi işveren uyuşmazlıklarında dava şartı arabuluculuk kapsamındadır.  Şayet iş ilişkisi sona erdikten sonra rekabet yasağına aykırılıktan kaynaklanan uyuşmazlık varsa  ticari uyuşmazlık dava şartı arabuluculuk kapsamındadır.  Bu her iki durumda da taraflar bir arabulucuya veya arabuluculuk merkezine başvurarak arabuluculuk sürecini başlatabilirler.</p>        
+      <p class="fw-bold">İşe iade talepli arabuluculuk başvurularında anlaşma tutanağı nasıl olmalıdır?</p>
+      <p>İşe iade talepli arabuluculuk başvurularında şayet taraflar işçinin işe iadesi konusunda anlaşmışlarsa, anlaşma tutanak içeriği İş Kanunu 21. Maddesine göre şu hususları içermelidir; işe başlatma tarihini,dört aylık doğmuş ücret ve diğer hakların parasal miktarını, işçinin işe başlatılmaması durumunda işe başlatmama tazminatının parasal miktarını, arabuluculuk anlaşma tutanağı. Aksi takdirde anlaşma sağlanamamış sayılır ve son tutanak arabulucu tarafından anlaşmama olarak düzenlenmelidir.</p>
+      <p class="fw-bold">İtirazın İptali Davaları Zorunlu Arabuluculuk Kapsamında Mıdır?</p>
+      <p>İtirazın iptali davalarının zorunlu arabuluculuk kapsamında olup olmadığını, ilişkinin esası belirler. Konusu bir miktar para alacağı ve tazminatlar, dava şartı arabuluculuk kapsamında değilse taraflar ihtiyari olarak uyuşmazlığı arabulucuda çözümleyebilirler. Örneğin kira ilişkisinden kaynaklı alacaklar zorunlu arabuluculuk sürecine tabi olmadığından itirazın iptali davası da zorunlu arabuluculuk sürecine tabi değildir. Bu halde ihtiyari arabuluculukla çözüme gidilebilir. Ancak her iki tarafı tacir olan kira sözleşmelerinden kaynaklı itirazın iptali davaları zorunlu arabuluculuk kapsamındadır. Bu her iki durumda da taraflar veya kanuni temsilcileri bir arabulucu veya arabuluculuk merkezine başvurarak arabuluculuk yoluyla soruna çözüm getirebilirler.</p>
+      <p class="fw-bold">Hangi Uyuşmazlıklarda Arabuluculuk Uygulanır?</p>
+      <p>Tarafların üzerinde serbestçe tasarruf edebilecekleri her türlü iş veya işlemlerden doğan özel hukuk uyuşmazlıklarında arabuluculuk uygulanır. İş hukukundan ve ticaret hukukundan kaynaklanan uyuşmazlıklar zorunlu arabuluculuk kapsamındadır. İşe iade, kıdem tazminatı, ihbar tazminatı, ücret alacağı, fazla mesai alacağı, yıllık ücretli izin alacağı, abonelik sözleşmelerinden kaynaklı para alacakları, rekabet yasağına ilişkin uyuşmazlıklar, komisyon sözleşmelerinden kaynaklanan alacaklar, kooperatif kanunundan ve cari hesaptan kaynaklanan alacaklar gibi birçok uyuşmazlıkta dava açmadan önce arabulucuya başvurmak zorunludur. Kira alacağı, boşanma sonrası mal tasfiyesi, izale-i şuyu, malpraktis, iş kazalarından kaynaklı maddi manevi tazminat, destekten yoksun kalma tazminatı, inşaat, eser sözleşmesinden kaynaklanan uyuşmazlıklar gibi pek çok konu arabuluculuğa elverişlidir. Bu gibi durumda taraflar veya kanuni temsilcileri bir arabulucu veya arabuluculuk merkezine başvurarak arabuluculuk yoluyla uyuşmazlığa çözüm getirebilirler.</p>  
+      <p class="fw-bold">Arabuluculuk anlaşma belgeleri harç ve vergiye tabi midir?</p>   
+      <p>Anlaşma belgesine icra edilebilir şerhi verilebilmesi için mahkemeye yapılacak olan başvuru ile bunun üzerine verilecek karalara karşı ilgili tarafın istinaf yoluna gitmesi halinde maktu harç alınır. Arabuluculuk anlaşma belgelerine icra edilebilirlik şerhi verilmeden, taraflar başka resmi bir işlemde kullanmak isterlerse maktu damga vergisi öderler. Bunun haricinde arabuluculunun hazırladığı ve tarafların onayladığı anlaşma belgeleri için her hangi bir harç ya da vergi ödenmez.</p>    
     </section>
   </section>
-  <section id="footer">
+  <section id="footer" class="mt-5">
     <div class="container">
-      <footer class="row row-cols-5 py-5 mt-5">
-        <div class="col-2">
+      <footer class="row p2-b p2-t">
+        <div class="col-12 col-md-2 d-none d-md-flex">
           <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
             <img class="img-fluid" src="/assets/images/agoralogo3.png" width="120" alt="">
           </a>
         </div>
-        <div class="col-6 me-5">
+        <div class="col-12 col-md-6 p2-e">
           <h5>İletişim</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 "><i class="fa-solid fa-envelope"></i> info@agoraarabuluculuk.com</a></li>
@@ -203,10 +208,10 @@
             <li class="nav-item "><a href="#" class="nav-link p-0 "><i class="fa-brands fa-youtube"></i></a></li>
           </ul>
         </div>
-        <div class="col-3">
+        <div class="col-12 col-md-4">
           <p>Mail ile bilgilendirilmek isterseniz e-mail adresinizi bize bırakın size geri dönüş sağlayalım.</p>
-          <form class="footer-newsletter mt-4">
-            <input class="btn"  type="email" name="email" placeholder="E-Mail Adresiniz" required="">
+          <form id="email-form" class="mt-4">
+            <input id="email" class="btn"  type="email" name="email" placeholder="E-Mail Adresiniz" required="">
             <button class="btn" type="submit"><i class="fa fa-paper-plane"></i></button>
           </form>
         </div>
