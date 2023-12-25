@@ -153,8 +153,9 @@ const percentages = [[0.06, 0.05, 0.04, 0.03, 0.02, 0.015, 0.01, 0.005], [0.09, 
 const percentageThresholds = [100000, 160000, 260000, 520000, 1560000, 2080000, 4160000, 8840000];
 
 function transformLocaleToStandart (num) {
-	num = num.replace(".", "").replace(",", ".")
-	return parseFloat(num)
+	const numTemp1 = num.replace(/\./g, '')
+	const numTemp2 = numTemp1.replace(/,/g, '.')
+	return parseFloat(numTemp2)
 }
 
 function appendTableRows (income, id, currentMatbuhPrice) {
