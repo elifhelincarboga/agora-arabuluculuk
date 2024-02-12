@@ -1,49 +1,153 @@
-const percentage = [
-  {
-    id: 1,
-    percentage: 6,
-    percentageMulti: 9
-  },
-  {
-    id: 2,
-    percentage: 5,
-    percentageMulti: 7.5
-  },
-  {
-    id: 3,
-    percentage: 4,
-    percentageMulti: 6
-  },
-  {
-    id: 4,
-    percentage: 3,
-    percentageMulti: 4.5
-  },
-  {
-    id: 5,
-    percentage: 2,
-    percentageMulti: 3
-  },
-  {
-    id: 6,
-    percentage: 1.5,
-    percentageMulti: 2.5
-  },
-  {
-		id: 7,
-		percentage: 1,
-		percentageMulti: 1.5
-  },
-  {
-    id: 8,
-    percentage: 0.5,
-    percentageMulti: 1
-  }
-]
-
 const matbuhList = [
 	{
 		id: 1,
+		taraf: [
+			{
+				id: 2,
+				price: 2080
+			},
+			{
+				id: 3,
+				price: 2200
+			},
+			{
+				id: 6,
+				price: 2400
+			},
+			{
+				id: 11,
+				price: 2600
+			}
+		]
+	},
+	{
+		id: 2,
+		taraf: [
+			{
+				id: 2,
+				price: 3600
+			},
+			{
+				id: 3,
+				price: 3800
+			},
+			{
+				id: 6,
+				price: 4000
+			},
+			{
+				id: 11,
+				price: 4200
+			}
+		]
+	},
+	{
+		id: 3,
+		taraf: [
+			{
+				id: 2,
+				price: 2080
+			},
+			{
+				id: 3,
+				price: 2200
+			},
+			{
+				id: 6,
+				price: 2400
+			},
+			{
+				id: 11,
+				price: 2600
+			}
+		]
+	},
+	{
+		id: 4,
+		taraf: [
+			{
+				id: 2,
+				price: 2080
+			},
+			{
+				id: 3,
+				price: 2200
+			},
+			{
+				id: 6,
+				price: 2400
+			},
+			{
+				id: 11,
+				price: 2600
+			}
+		]
+	},
+	{
+		id: 5,
+		taraf: [
+			{
+				id: 2,
+				price: 2320
+			},
+			{
+				id: 3,
+				price: 2400
+			},
+			{
+				id: 6,
+				price: 2600
+			},
+			{
+				id: 11,
+				price: 2800
+			}
+		]
+	},
+	{
+		id: 6,
+		taraf: [
+			{
+				id: 2,
+				price: 2400
+			},
+			{
+				id: 3,
+				price: 2800
+			},
+			{
+				id: 6,
+				price: 3000
+			},
+			{
+				id: 11,
+				price: 3200
+			}
+		]
+	},
+	{
+		id: 7,
+		taraf: [
+			{
+				id: 2,
+				price: 2200
+			},
+			{
+				id: 3,
+				price: 2300
+			},
+			{
+				id: 6,
+				price: 2500
+			},
+			{
+				id: 11,
+				price: 2700
+			}
+		]
+	},
+	{
+		id: 8,
 		taraf: [
 			{
 				id: 2,
@@ -64,7 +168,7 @@ const matbuhList = [
 		]
 	},
 	{
-		id: 2,
+		id: 9,
 		taraf: [
 			{
 				id: 2,
@@ -85,7 +189,7 @@ const matbuhList = [
 		]
 	},
 	{
-		id: 3,
+		id: 10,
 		taraf: [
 			{
 				id: 2,
@@ -106,7 +210,7 @@ const matbuhList = [
 		]
 	},
 	{
-		id: 4,
+		id: 11,
 		taraf: [
 			{
 				id: 2,
@@ -127,7 +231,7 @@ const matbuhList = [
 		]
 	},
 	{
-		id: 5,
+		id: 12,
 		taraf: [
 			{
 				id: 2,
@@ -150,7 +254,8 @@ const matbuhList = [
 ]
 
 const percentages = [[0.06, 0.05, 0.04, 0.03, 0.02, 0.015, 0.01, 0.005], [0.09, 0.075, 0.06, 0.045, 0.03, 0.025, 0.015, 0.01]];
-const percentageThresholds = [100000, 160000, 260000, 520000, 1560000, 2080000, 4160000, 8840000];
+const percentageThresholds2023 = [100000, 160000, 260000, 520000, 1560000, 2080000, 4160000, 8840000];
+const percentageThresholds2024 = [200000, 320000, 520000, 1040000, 3120000, 4160000, 8320000, 17680000];
 
 function transformLocaleToStandart (num) {
 	const numTemp1 = num.replace(/\./g, '')
@@ -158,7 +263,8 @@ function transformLocaleToStandart (num) {
 	return parseFloat(numTemp2)
 }
 
-function appendTableRows (income, id, currentMatbuhPrice) {
+function appendTableRows (income, id, currentMatbuhPrice, uyusmazlik) {
+	const percentageThresholds = uyusmazlik > 7 ? percentageThresholds2023 : percentageThresholds2024
   	let price = 0;
 
 	const tableBody = document.getElementById("resultTableBody")
@@ -178,7 +284,7 @@ function appendTableRows (income, id, currentMatbuhPrice) {
 				<tr>
 					<td>${i === 0 ? 'İlk' : 'Sonra Gelen'} ₺${percentageThresholds[i]} için</td>
 					<td>%${percentages[id - 1][i] * 100}</td>
-					<td>₺${incomePercentage > currentMatbuhPrice ? incomePercentage : (id === 1 ? currentMatbuhPrice : incomePercentage)}</td>
+					<td>₺${incomePercentage > currentMatbuhPrice ? incomePercentage : currentMatbuhPrice}</td>
 				</tr>
 			`
 			tableBody.appendChild(newTr)
@@ -317,7 +423,7 @@ function submitClick () {
 
 function calculate (uyusmazlik, arabulucuSayisi, tarafSayisi, fiyat) {
 	const currentMatbuhPrice = matbuhList.find(a => a.id == uyusmazlik).taraf.find(b => b.id == tarafSayisi).price
-	appendTableRows(fiyat, arabulucuSayisi, currentMatbuhPrice)
+	appendTableRows(fiyat, arabulucuSayisi, currentMatbuhPrice, uyusmazlik)
 }
 
 document.addEventListener('DOMContentLoaded', function() {
