@@ -18,7 +18,8 @@ const matbuhList = [
 				id: 11,
 				price: 2600
 			}
-		]
+		],
+		min: 4000
 	},
 	{
 		id: 2,
@@ -39,7 +40,8 @@ const matbuhList = [
 				id: 11,
 				price: 4200
 			}
-		]
+		],
+		min: 6000
 	},
 	{
 		id: 3,
@@ -60,7 +62,8 @@ const matbuhList = [
 				id: 11,
 				price: 2600
 			}
-		]
+		],
+		min: 4000
 	},
 	{
 		id: 4,
@@ -81,7 +84,8 @@ const matbuhList = [
 				id: 11,
 				price: 2600
 			}
-		]
+		],
+		min: 4000
 	},
 	{
 		id: 5,
@@ -102,7 +106,8 @@ const matbuhList = [
 				id: 11,
 				price: 2800
 			}
-		]
+		],
+		min: 4000
 	},
 	{
 		id: 6,
@@ -123,7 +128,8 @@ const matbuhList = [
 				id: 11,
 				price: 3200
 			}
-		]
+		],
+		min: 6000
 	},
 	{
 		id: 7,
@@ -144,7 +150,8 @@ const matbuhList = [
 				id: 11,
 				price: 2700
 			}
-		]
+		],
+		min: 4000
 	},
 	{
 		id: 8,
@@ -263,7 +270,7 @@ function transformLocaleToStandart (num) {
 	return parseFloat(numTemp2)
 }
 
-function appendTableRows (income, id, currentMatbuhPrice, uyusmazlik) {
+function appendTableRows (income, id, currentMatbuh, uyusmazlik, min) {
 	const percentageThresholds = uyusmazlik > 7 ? percentageThresholds2023 : percentageThresholds2024
   	let price = 0;
 
@@ -284,7 +291,7 @@ function appendTableRows (income, id, currentMatbuhPrice, uyusmazlik) {
 				<tr>
 					<td>${i === 0 ? 'İlk' : 'Sonra Gelen'} ₺${percentageThresholds[i]} için</td>
 					<td>%${percentages[id - 1][i] * 100}</td>
-					<td>₺${incomePercentage > currentMatbuhPrice ? incomePercentage : currentMatbuhPrice}</td>
+					<td>₺${i=== 0 ? (min >= incomePercentage ? min : incomePercentage > currentMatbuh.price ? incomePercentage : currentMatbuh.price) : incomePercentage}</td>
 				</tr>
 			`
 			tableBody.appendChild(newTr)
@@ -308,7 +315,7 @@ function appendTableRows (income, id, currentMatbuhPrice, uyusmazlik) {
 		<tr>
 			<td style="font-weight: bold;">Toplam Ücret</td>
 			<td></td>
-			<td id="toplamUcret" style="font-weight: bold;">₺${price > currentMatbuhPrice ? price : currentMatbuhPrice}</td>
+			<td id="toplamUcret" style="font-weight: bold;">₺${price < min ? min : price > currentMatbuh.price ? price : currentMatbuh.price}</td>
 		</tr>
 	`
 	tableBody.appendChild(newTr)
@@ -422,8 +429,9 @@ function submitClick () {
 }
 
 function calculate (uyusmazlik, arabulucuSayisi, tarafSayisi, fiyat) {
-	const currentMatbuhPrice = matbuhList.find(a => a.id == uyusmazlik).taraf.find(b => b.id == tarafSayisi).price
-	appendTableRows(fiyat, arabulucuSayisi, currentMatbuhPrice, uyusmazlik)
+	const currentMatbuh = matbuhList.find(a => a.id == uyusmazlik).taraf.find(b => b.id == tarafSayisi)
+	const min = matbuhList.find (a => a.id == uyusmazlik).min
+	appendTableRows(fiyat, arabulucuSayisi, currentMatbuh, uyusmazlik, min)
 }
 
 document.addEventListener('DOMContentLoaded', function() {
